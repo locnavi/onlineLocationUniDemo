@@ -1,0 +1,22 @@
+{
+	"nativePlugins": [
+		{
+		    "plugins": [
+		    {
+		        "type": "module",
+		        "name": "uniplugin_module",
+		        "class": "io.dcloud.uniplugin.TestModule"
+		    }
+		    ]
+		},
+		{
+			"plugins": [
+				{
+					"type": "module",
+					"name": "LocNaviOnlineLocationSDK",
+					"class": "com.uniapp.locnavi.onlinelocationsdk.LocNaviUniClient"
+				}
+			]
+		}
+	]
+}
