@@ -13,7 +13,7 @@
 			"plugins": [
 				{
 					"type": "module",
-					"name": "LocNaviOnlineLocationSDK",
+					"name": "LocNavi-OnlineLocationSDK",
 					"class": "com.uniapp.locnavi.onlinelocationsdk.LocNaviUniClient"
 				}
 			]
