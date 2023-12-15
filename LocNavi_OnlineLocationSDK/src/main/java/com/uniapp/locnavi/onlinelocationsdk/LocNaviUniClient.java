@@ -18,6 +18,17 @@ public class LocNaviUniClient extends UniModule {
 
     //run ui thread
     @UniJSMethod(uiThread = false)
+    public void checkAvailability(UniJSCallback callback) {
+        Log.d(TAG, "checkAvailability--");
+        Context context = this.mUniSDKInstance.getContext();
+        LocNaviClient client = LocNaviClient.getInstanceForApplication(context.getApplicationContext());
+        if(callback != null) {
+            callback.invoke(client.checkAvailability());
+        }
+    }
+
+    //run ui thread
+    @UniJSMethod(uiThread = false)
     public void setBaseUri(JSONObject data, UniJSCallback callback) {
         Log.d(TAG, "setBaseUri--"+ data.toString());
         Context context = this.mUniSDKInstance.getContext();
